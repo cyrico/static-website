@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body> 
+        <div class = 'navBarContainer'>
+            <div class = 'navBarText'><p>Nuvema Town<br>Pokemon Lab</p></div>
+            <div class = 'navImg'>
+                <a href ="{{ url_for('about') }}"><img src="../static/images/question.png" alt ="about link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('index') }}"><img src="../static/images/pokeball.png" alt ="homepage link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('login') }}"><img src="../static/images/login.png" alt ="login link" width = 40rem height = 40rem></a>
+           </div>
+        </div>
+        <div class = "loginHeaderText">
+            <h2>Login or create an account to request a Pokemon</h2>
+        </div>
+        <div class = "loginForm">
+            <form action = "/account_login" method = "POST">
+                <label for="ID">TrainerID</label><br>
+                <input type="text" id="ID" name="ID" required><br>
+                <label for="password">Password</label><br>
+                <input type="text" id="password" name="password" required><br>
+                <input type="submit" name = "action" value="Create Account">
+                <input type="submit" name = "action" value="Login">
+            </form>
+        </div>
+        <div class="adminContain">
+            <div class ="adminCred">
+                <p>Admin Dashboard Login</p>
+                <p>Trainer ID : admin</p>
+                <p>Password: admin</p>
+            </div>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <title>Admin Results</title>
+    </head>
+    <body>
+        <div class ="errorMessage"><h1>{{errorMessage}}</h1></div>
+        <div class ="backToLogin"><a href ="{{ url_for('admin') }}"><h2>Back</h2></a></div>
+
+    {% for item in data %}
+    <tr>
+        <td>{{item[0]}}</td>
+        <td>{{item[1]}}</td>
+        <td>{{item[2]}}</td>
+        <td>{{item[3]}}</td>
+        <td>{{item[4]}}</td>
+     <br>
+    </tr>
+    {% endfor %}
+    </body>
+</html>

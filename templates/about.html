@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body>
+        <div class = 'navBarContainer'>
+            <div class = 'navBarText'><p>Nuvema Town<br>Pokemon Lab</p></div>
+            <div class = 'navImg'>
+                <a href ="{{ url_for('about') }}"><img src="../static/images/question.png" alt ="about link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('index') }}"><img src="../static/images/pokeball.png" alt ="homepage link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('login') }}"><img src="../static/images/login.png" alt ="login link" width = 40rem height = 40rem></a>
+           </div>
+        </div>
+        <div class="aboutMainDiv">
+            <div id="aboutTextTagline">
+                <h1>The Start of Something Big.</h1>
+                <h2>About the Lab</h2>
+                <h3>Focused on researching the origins of Pokemon, our scientists became fascinated with the bond between Pokemon and humans. The truth is, there is an undeninable bond of trust and friendship, bringing out the ideal nature of both parties. Ever since 2010, Juniper Lab has made it their mission to supply trainers with their first Pokemon pal all across the Unova region.</h3>
+                <h2>Requesting a Pokemon</h2>
+                <h3>Please create an account and fill out our request form and the staff at Juniper Lab will reach out when we have a match. Be aware that we require five in person meets before you can take your new Pokemon home. This is to make sure each pairing has good chemistry and to get the Pokemon comfortable with their new trainer before leaving the Lab.</h3>
+                <h2>The First Steps</h2>
+                <h3>Starting your journey is daunting. Remember, it's you and your Pokemon against the world! Our support staff can always be reached by Xtransceiver - but remember, this is your chance to make your way through the region and discover who you are. Make your dreams into your reality, and it will become your truth. It all starts with the first step.</h3>
+            </div>
+        </div>
+        <div class ="pokemonHeader"><h1>Meet the Pokemon</h1></div>
+        <div class="pokemonBox">
+            <img src="../static/images/snivy_1.png" alt="snivy" class="snivyImage">
+            <div class="snivyText">
+                <h1>001. Grass Snake Pokemon</h1>
+                <h2>Name: Snivy</h2>
+                <h2>Type: Grass</h2>
+                <h3>Snivy is an elegant, refined Pokemon. They are calm and intelligent, and prefers to avoid large groups. Any trainer would be lucky to have such a classy Pokemon.</h3>
+            </div>
+        </div>
+        <div class="pokemonBoxLeft">
+            <img src="../static/images/tepig_1.png" alt="tepig" class="tepigImage">
+            <div class="tepigText">
+                <h1>004. Fire Pig Pokemon</h1>
+                <h2>Neme: Tepig</h2>
+                <h2>Type: Fire</h2>
+                <h3>Tepig is a playful companion who will always give it their all in every situation. They are excitable and enthusiatic - be aware of any stray fireballs! Any trainer will be in high spirits with a Tepig at their side.</h3>
+            </div>
+        </div>
+        <div class="pokemonBox">
+            <img src="../static/images/oshawott_1.png" alt="oshawott" class="oshawottImage">
+            <div class="oshawottText">
+                <h1>007. Sea Otter Pokemon</h1>
+                <h2>Name: Oshawott</h2>
+                <h2>Type: Water</h2>
+                <h3>Oshawott is surprisingly fierce for a small Pokemon, on the lookout for any danger. Yet, at the same time, they are silly and down for a joke. Any trainer is sure to be safe wih an Oshawott.</h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </body>
+</html>

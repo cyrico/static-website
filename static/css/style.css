@@ -1,0 +1,277 @@
+body,html {
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+  }
+
+.navBarContainer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navBarText {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+.navImg {
+    display: flex;
+    gap: 10em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.homepageImage {
+    opacity: 0.5;
+    position:absolute;
+}
+
+.homepageTextBox {
+    background-color: black;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/* custom font as a picture? */
+.homepageText {
+    position: absolute;
+    font-size: 30px;
+    float: left;
+    color: white;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.homepageTagline {
+    position: absolute;
+    font-size: 12px;
+    float: left;
+    color: white;
+    bottom: -32%;
+    left: 45%;
+}
+
+.selection {
+    margin-top: 60em;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    margin-right: 5em;
+    flex: 1;
+    height: 15em;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.right {
+    margin-left: 5em;
+    flex: 1;
+    height: 15em;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.center {
+    flex: 1.3;
+    height: 20em;
+    background-color: black;
+    border: 5px solid white;
+}
+
+.buttons {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60em;
+}
+
+.left_arrow {
+    height: 1.5em;
+    width: 2em;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+.right_arrow {
+    height: 1.5em;
+    width: 2em;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+.pickPokemon {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 5em;
+}
+
+.form {
+    margin-top: 5em;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: large; 
+}
+
+input[type=text] {
+    padding: 8px 20px;
+    margin: 8px 0;
+    width: 100%;
+  }
+
+.aboutMainDiv {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100%;         
+    width: 90%;           
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: double;
+    border-radius: 10px;
+}
+
+#aboutTextTagline {
+    text-align: center;
+    padding: 2em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pokemonHeader {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5em;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 10px;
+
+}
+
+.pokemonBox {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.pokemonBoxLeft {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5em;
+   
+}
+
+.snivyImage {
+    border-style: solid;
+    border-width: 7px;
+    border-color: green;
+    padding: 5px;
+    background-color: black;
+}
+
+.snivyText {
+    padding-top: 2em;
+    color: darkgreen;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.tepigImage {
+    border-style: solid;
+    border-width: 7px;
+    border-color: red;
+    padding: 5px;
+    background-color: white;
+}
+
+.tepigText {
+    padding-top: 2em;
+    color: darkred;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.oshawottImage {
+    border-style: solid;
+    border-width: 7px;
+    border-color: blue;
+    padding: 5px;
+    background-color: black;
+}
+.oshawottText {
+    padding-top: 2em;
+    padding-left: 2em;
+    color: darkblue;
+    text-align: center;
+}
+
+.loginHeaderText {
+    display: flex; 
+    justify-content: center;
+    margin-top: 2em;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.errorMessage {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.backToLogin {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.adminContain {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}

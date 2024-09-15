@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body> 
+        <div class = 'navBarContainer'>
+            <div class = 'navBarText'><p>Nuvema Town<br>Pokemon Lab</p></div>
+            <div class = 'navImg'>
+                <a href ="{{ url_for('about') }}"><img src="../static/images/question.png" alt ="about link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('index') }}"><img src="../static/images/pokeball.png" alt ="homepage link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('login') }}"><img src="../static/images/login.png" alt ="login link" width = 40rem height = 40rem></a>
+           </div>
+        </div>
+        <h2>Welcome to the Admin Dashboard</h2>
+        <p>There are two tables: Trainers and Orders</p>
+        <p>Trainers has trainerID (primary key) and password columns</p>
+        <p>Orders has trainerID (foreign key), first_name, last_name, town, and pokemon columns</p>
+        <p>Use the form to search and delete trainers for fun</p>
+
+        <h2>select form</h2>
+        <form action = "/select_query" method = "POST">
+            <input type="radio" id="SELECT" name="SELECT" value="SELECT" required>
+            <label for="SELECT">SELECT</label><br>
+            <label for="columns">type in the columns you want to search from, make sure to use "," if searching by multiple columns. Or just use "*" to select all columns.</label><br>
+            <input type="text" id="columns" name="columns" required><br>
+            <input type="radio" id="FROM" name="FROM" value="FROM" required>
+            <label for="FROM">FROM</label><br>
+            <label for="table">choose which table to search from, Trainers or Orders. Make sure you have the right column names for whichever table.</label><br>
+            <input type="text" id="table" name="table" required><br>
+            <input type="radio" id="WHERE" name="WHERE" value="WHERE">
+            <label for="WHERE">WHERE - optional</label><br>
+            <label for="search">optional search with column conditions. You need to have both the where button and column search filled in for it to work. (example: pokemon='oshawott') </label><br>
+            <input type="text" id="search" name="search"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <br>
+
+        <h2>Delete Form</h2>
+        <h3>If you delete the admin account just register it again with the same credentials</h3>
+        <form action = "/delete_query" method = "POST">
+            <input type="radio" id="DELETE" name="DELETE" value="DELETE" required>
+            <label for="DELETE">DELETE</label><br>
+            <input type="radio" id="FROM" name="FROM" value="FROM" required>
+            <label for="FROM">FROM</label><br>
+            <label for="table">choose which table to search from, Trainers or Orders. Make sure you have the right column names for whichever table.</label><br>
+            <input type="text" id="table" name="table" required><br>
+            <input type="radio" id="WHERE" name="WHERE" value="WHERE">
+            <label for="WHERE">WHERE - optional</label><br>
+            <label for="search">optional search with column conditions. You need to have both the where button and column search filled in for it to work. (example: pokemon='oshawott'). If left blank the whole table data gets deleted.</label><br>
+            <input type="text" id="search" name="search"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html> 

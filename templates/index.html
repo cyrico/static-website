@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juniper Lab</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body>
+        <div class = 'navBarContainer'>
+            <div class = 'navBarText'><p>Nuvema Town<br>Pokemon Lab</p></div>
+            <div class = 'navImg'>
+                <a href ="{{ url_for('about') }}"><img src="../static/images/question.png" alt ="about link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('index') }}"><img src="../static/images/pokeball.png" alt ="homepage link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('login') }}"><img src="../static/images/login.png" alt ="login link" width = 40rem height = 40rem></a>
+           </div>
+        </div>
+
+        <div class = 'homepagePicture'>
+            <div class = 'homepageImage'><img src="../static/images/map.png" alt ="homepage picture" width = 100% height = auto></div></div>
+            <div class = 'homepageTextBox'></div>
+            <div class = 'homepageText'><p>Start with one.<br>Gotta catch 'em all.</p></div>
+            <div class = 'homepageTagline'><p>Find your Truths and Ideals</p></div>
+        </div>
+
+        <!-- look into Z-Indexes if there's time to get an overlap effect -->
+        <!-- I kinda like how they look like they're escaping their boxes -->
+        <!-- Radio buttons up here to also select ? -->
+        <div class = 'selection'>
+            <div class = 'right'><img id ="right" src="../static/images/tepig_1.png" alt ="tepig" width = 100%></div>
+            <div class = 'center'><img id="center" src="../static/images/snivy_1.png" alt ="snivy" width = 100%></div>
+            <div class = 'left'><img id="left" src="../static/images/oshawott_1.png" alt ="oshawott" width = 100%></div>
+        </div>
+        <div class = 'buttons'>
+            <button class="arrow-button left_arrow" onclick="turnLeft()">&lt</button>
+            <button class="arrow-button right_arrow" onclick="turnRight()">&gt</button>
+        </div>
+    
+    </body>
+</html>

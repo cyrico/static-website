@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Page</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script src="../static/js/script.js"></script>
+    </head>
+    <body> 
+        <div class = 'navBarContainer'>
+            <div class = 'navBarText'><p>Nuvema Town<br>Pokemon Lab</p></div>
+            <div class = 'navImg'>
+                <a href ="{{ url_for('about') }}"><img src="../static/images/question.png" alt ="about link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('index') }}"><img src="../static/images/pokeball.png" alt ="homepage link" width = 40rem height = 40rem></a>
+                <a href ="{{ url_for('login') }}"><img src="../static/images/login.png" alt ="login link" width = 40rem height = 40rem></a>
+           </div>
+        </div>
+        <div class = "form">
+            <form action = "/order_submit" method = "POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="town">Town</label>
+                <select id ="town" name ="town" required>
+                    <option value="nuvema">Nuvema Town</option>
+                    <option value="accumula">Accumula Town</option>
+                    <option value="striaton">Striaton City</option>
+                    <option value="nacrene">Nacrene City</option>
+                    <option value="castelia">Castelia City</option>
+                    <option value="nimbasa">Nimbasa City</option>
+                    <option value="driftveil">Driftveil City</option>
+                    <option value="mistralton">Mistralton City</option>
+                    <option value="icirrus">Icirrus City</option>
+                    <option value="opelucid">Opelucid City</option>
+                    <option value="lacunosa">Lacunosa Town</option>
+                    <option value="undella">Undella Town</option>
+                    <option value="black">Black City</option>
+                    <option value="white">White Forest</option>
+                    <option value="anville">Anville Town</option>
+                    <option value="bridge">Village Bridge</option>
+                </select>
+                <br>
+                <input type="radio" id="snivy" name="pokemon" value="snivy" required>
+                <label for="snivy">Snivy</label><br>
+                <input type="radio" id="tepig" name="pokemon" value="tepig">
+                <label for="tepig">Tepig</label><br>
+                <input type="radio" id="oshawott" name="pokemon" value="oshawott">
+                <label for="oshawott">Oshawott</label>
+                <br>
+                <input type="submit" value="Submit">
+              
+            </form>
+        </div>
+        <div class="backToLogin">
+            <form action="/logout" method="POST">
+                <input type="submit" value="Logout">
+            </form>
+        </div>
+    </body>
+</html>
