@@ -9,6 +9,3 @@ Steps to Run
 if there is a problem running the VE, just install the requirements directly 
 
 Completed in 2024
-This website was made with plain HTML, CSS, JavaScript, and the Flask framework for server side handling. It uses SQLite3 for the database that holds all the users and orders.  
-
-This is my first website built from scratch, and so I decided to not use frameworks like React in order for me to learn the fundamentals myself. It is definitely rough around the edges and I underutilized JavaScript, but overall it was fun to make and I learned quite a bit. 
